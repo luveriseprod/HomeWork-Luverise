@@ -8,51 +8,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="uptext">
-      <h1>Vladimir Sidorenko</h1>
+    <header class="header">
+      <h1 align="center">Vladimir Sidorenko</h1>
     </header>
-
-    <nav>
-      <a href="https://vk.com/luverise">Моя страница ВК</a>
-    </nav>
-
     <section class="section1">
-      <h2>Обо мне</h2>
-      <img width="150" src="image.jpg" alt="image" />
-      <p>Меня зовут Владимир Сидоренко. Я обучаюсь на курсах Алексея!</p>
-      <h3>Мои хобби</h3>
-      <ul>
-        <li>Музыка</li>
-        <li>Автомобили</li>
-        <li>Детейлинг ПК</li>
-      </ul>
-      <h3>Технологии</h3>
-      <table class="gltable" border="3" width="300" >
-        <thead>
-          <tr>
-            <th>Область</th>
-            <th>Технологии</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Backend</td>
-            <td>Node.js, Express</td>
-          </tr>
-          <tr>
-            <td>Frontend</td>
-            <td>React.js, HTML, CSS</td>
-          </tr>
-          <tr>
-            <td>Базы Данных</td>
-            <td>MongoDB, SQL</td>
-          </tr>
-          <tr>
-            <td>Другое</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="section_element">
+        <nav>
+          <a href="https://vk.com/luverise">Моя страница ВК</a>
+        </nav>
+
+        <h2>Обо мне</h2>
+        <img width="150" src="image.jpg" alt="image" />
+        <p>Меня зовут Владимир Сидоренко. Я обучаюсь на курсах Алексея!</p>
+        <h3>Мои хобби</h3>
+        <ul style="margin-left: 20px">
+          <li>Музыка</li>
+          <li>Автомобили</li>
+          <li>Детейлинг ПК</li>
+        </ul>
+        <h3>Технологии</h3>
+        <table class="gltable" border="3" width="300">
+          <thead>
+            <tr>
+              <th>Область</th>
+              <th>Технологии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Backend</td>
+              <td>Node.js, Express</td>
+            </tr>
+            <tr>
+              <td>Frontend</td>
+              <td>React.js, HTML, CSS</td>
+            </tr>
+            <tr>
+              <td>Базы Данных</td>
+              <td>MongoDB, SQL</td>
+            </tr>
+            <tr>
+              <td>Другое</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section2">
@@ -137,7 +138,7 @@
             </tr>
             <tr>
               <td></td>
-              <td >
+              <td>
                 <button type="submit" id="send">Отправить</button>
               </td>
             </tr>
@@ -146,6 +147,8 @@
       </table>
     </section>
 
-    <footer class="footer">Copyright &copy Volodya</footer>
+    <footer class="footer">
+      <div class="section_element">Copyright &copy Volodya</div>
+    </footer>
   </body>
 </html>
