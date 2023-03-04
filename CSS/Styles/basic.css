@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&family=Tilt+Neon&display=swap');
+
+.uptext {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 25px;
+    color: burlywood;
+    background-color: rgb(208, 228, 204);
+}
+
+h3 {
+    background-color: aquamarine;
+    border: 2px red solid;
+}
+
+h3{
+    font-family: 'Shantell Sans', cursive;
+}
+
+table.gltable{
+    color:rgb(56, 16, 233);
+}
+
+#send {
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: rgb(231, 231, 241);
+}
+
+.section1{
+    background-color: rgb(182, 210, 223);
+}
+.section2{
+    background-color: rgb(199, 188, 218);
+}
+.section3{
+    background-color: rgb(223, 182, 211);
+}
+.section3 input, .section3 textarea, .section3 select{
+    background-color: rgb(224, 226, 192);
+    border: 1px rgb(156, 196, 179) solid;
+}
+.footer{
+    background-color: rgb(228, 175, 175);
+}
