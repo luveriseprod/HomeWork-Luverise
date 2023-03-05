@@ -77,74 +77,41 @@
     </section>
 
     <section class="section3">
-      <h1>Написать мне</h1>
-      <table border="1">
-        <form>
-          <tbody>
-            <tr>
-              <td>
-                <label for="FirstName">Имя</label>
-              </td>
-              <td>
-                <input type="text" id="FirstName" placeholder="Иван" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="LastName">Фамилия</label>
-              </td>
-              <td>
-                <input type="text" id="LastName" placeholder="Петров" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="age">Возраст</label>
-              </td>
-              <td>
-                <input
-                  min="18"
-                  max="45"
-                  type="number"
-                  id="age"
-                  placeholder="18"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="sex">Пол</label>
-              </td>
-              <td>
-                <select name="Пол" id="sex">
-                  <option value="male">Муж</option>
-                  <option value="female">Жен</option>
-                  <option value="none">-</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="message">Сообщение</label>
-              </td>
-              <td>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <button type="submit" id="send">Отправить</button>
-              </td>
-            </tr>
-          </tbody>
-        </form>
-      </table>
+      <h1 id="section3_up">Написать мне</h1>
+      <form class="form flex-container direction-column">
+        <div class="flex-container">
+          <label for="FirstName">Имя</label>
+          <input type="text" id="FirstName" placeholder="Иван" />
+        </div>
+        <br />
+        <div class="flex-container">
+          <label for="LastName">Фамилия</label>
+          <input type="text" id="LastName" placeholder="Петров" />
+        </div>
+        <br />
+        <div class="flex-container">
+          <label for="age">Возраст</label>
+          <input min="18" max="45" type="number" id="age" placeholder="18" />
+        </div>
+        <br />
+        <div class="flex-container">
+          <label for="sex">Пол</label>
+          <select name="Пол" id="sex">
+            <option value="male">Муж</option>
+            <option value="female">Жен</option>
+            <option value="none">-</option>
+          </select>
+        </div>
+        <br />
+        <div class="flex-container">
+          <label for="message">Сообщение</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <button type="submit" id="send">Отправить</button>
+        </div>
+        <br />
+      </form>
     </section>
 
     <footer class="footer">

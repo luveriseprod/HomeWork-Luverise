@@ -54,16 +54,39 @@ body{
     margin-bottom: 20px;
     border-radius: 20px;
 }
-.section3 h1, .section3 table{
+.section3 form{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+#section3_up{
     margin-left: 20px;
     margin-right: 20px;
 }
 .section3 input, .section3 textarea, .section3 select{
-    background-color: rgb(224, 226, 192);
+    background-color: rgb(211, 209, 209);
     border: 1px rgb(156, 196, 179) solid;
-    border-radius: 20px;
+    border-radius: 6px;
+    width: 150px;
+    height: 30px;
+    flex: 3;
+    outline: none;
+    padding: 5px;
 }
 .footer{
     background-color: rgb(228, 175, 175);
     border-radius: 20px;
+}
+.flex-container{
+    display: flex;
+    
+}
+.direction-column{
+    flex-direction: column;
+}
+.form label{
+    flex: 1
+}
+.section3 label{
+    align-self: center
 }
