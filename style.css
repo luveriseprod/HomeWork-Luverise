@@ -4,6 +4,23 @@
     margin: 0;
     padding: 0;
 }
+.flex_up{
+    display: flex;
+    justify-content:space-between;
+}
+#linkup{
+    text-align: right;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+a{
+    background-color: rgb(196, 234, 179);
+    padding: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
 h3 {
     background-color: aquamarine;
     border: 1px red ; 
@@ -33,6 +50,8 @@ body{
     border-radius: 20px;
 }
 .section1{
+    width: 600px;
+    height: 550px;
     background-color: rgb(182, 210, 223);
     margin: auto;
     margin-bottom: 20px;
@@ -43,6 +62,10 @@ body{
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
+}
+.section1 h2{
+    color: rgb(255, 127, 127);
+    text-align: center;
 }
 .section2 article{
     margin-left: 20px;
