@@ -4,17 +4,32 @@
     margin: 0;
     padding: 0;
 }
-.flex_up{
-    display: flex;
-    justify-content:space-between;
+.hr_auto{
+    margin-bottom: 0px;
+    width: auto;
+    height: 5px;
+    background-color: brown;
 }
-#linkup{
-    text-align: right;
+.flex_up{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#imagebor{
+    border-radius: 30px;
+}
+#linkup{ 
     margin-right: 20px;
     padding-top: 10px;
+    padding: 0;
+}
+.ghlink{
+    margin-left: 140px;
+    padding-top: 10px;
+    padding: 0;
 }
 a{
-    background-color: rgb(196, 234, 179);
     padding: 2px;
     cursor: pointer;
     text-decoration: none;
@@ -39,7 +54,8 @@ body{
     
 }
 .section_element{
-    margin-left: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
 }
 .header {
     font-size: 30px;
@@ -49,22 +65,25 @@ body{
     margin-bottom: 20px;
     border-radius: 20px;
 }
+
 .section1{
-    width: 600px;
-    height: 550px;
+    width: 680px;
+    height: 840px;
     background-color: rgb(182, 210, 223);
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
 }
 .section2{
+    width: 680px;
+    height: 300px;
     background-color: rgb(199, 188, 218);
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
 }
 .section1 h2{
-    color: rgb(255, 127, 127);
+    color: rgb(255, 9, 9);
     text-align: center;
 }
 .section2 article{
@@ -72,6 +91,8 @@ body{
     margin-right: 20px;
 }
 .section3{
+    width: 680px;
+    height: 415px;
     background-color: rgb(223, 182, 211);
     margin: auto;
     margin-bottom: 20px;
@@ -99,6 +120,9 @@ body{
 .footer{
     background-color: rgb(228, 175, 175);
     border-radius: 20px;
+    width: 680px;
+    height: 25px;
+    margin: auto;
 }
 .flex-container{
     display: flex;

@@ -14,23 +14,48 @@
 
     <section class="section1">
       <div class="section_element">
-        <h2>Обо мне</h2>
-        <hr>
+        <h2><big>Обо мне</big></h2>
+        <hr class="hr_auto" />
         <div class="flex_up">
-          <img width="180" src="image.jpg" alt="image" />
-          <div></div>
-          <nav id="linkup">
-            <a href="https://vk.com/luverise">Моя страница ВК</a>
-          </nav>
+          <img id="imagebor" width="250" src="image.jpg" alt="image" />
+          <div>
+            <nav class="ghlink">
+              <a href="https://github.com/luveriseprod/HomeWork-Luverise">
+                <img width="100" src="image2.png" alt="Image" />
+              </a>
+              <p align="center">GitHub</p>
+            </nav>
+          </div>
+          <div>
+            <nav id="linkup">
+              <a href="https://vk.com/luverise"
+                ><img
+                  width="100"
+                  src="https://regnum.ru/uploads/pictures/news/2017/06/07/regnum_picture_149684169532322_normal.png"
+                  alt="image"
+              /></a>
+              <p align="center">Вконтакте</p>
+            </nav>
+          </div>
         </div>
-        <p>Меня зовут Владимир Сидоренко. Я обучаюсь на курсах Алексея!</p>
+        <hr class="hr_auto" />
+        <br />
+        <p>
+          <big
+            >Меня зовут Владимир Сидоренко. Я обучаюсь на курсах Алексея!
+          </big>
+        </p>
+        <br />
         <h3>Мои хобби</h3>
+        <br>
         <ul style="margin-left: 20px">
           <li>Музыка</li>
           <li>Автомобили</li>
           <li>Детейлинг ПК</li>
         </ul>
+        <br>
         <h3>Технологии</h3>
+        <br>
         <table class="gltable" border="3" width="300">
           <thead>
             <tr>
@@ -57,65 +82,86 @@
             </tr>
           </tbody>
         </table>
+        <br />
+        <hr class="hr_auto" />
       </div>
     </section>
 
     <section class="section2">
-      <article>
-        <h3>Статья 1 - javascript</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
-          minima fugit voluptatem odio maxime adipisci!.
-        </p>
-        <a href="articles/javascript.html">Читать далее</a>
-      </article>
-
-      <article>
-        <h3>Статья 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-          enim ipsa, praesentium, autem natus illo voluptat
-        </p>
-        <a href="articles/technology.html">Читать далее</a>
-      </article>
+      <div class="section_element">
+        <br />
+        <hr class="hr_auto" />
+        <article>
+          <br />
+          <h3>Статья 1 - javascript</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            minima fugit voluptatem odio maxime adipisci!.
+          </p>
+          <a href="articles/javascript.html">Читать далее</a>
+        </article>
+        <hr />
+        <br />
+        <article>
+          <h3>Статья 2 - technology</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+            enim ipsa, praesentium, autem natus illo voluptat
+          </p>
+          <a href="articles/technology.html">Читать далее</a>
+        </article>
+        <br />
+        <hr class="hr_auto" />
+      </div>
     </section>
 
     <section class="section3">
-      <h1 id="section3_up">Написать мне</h1>
-      <form class="form flex-container direction-column">
-        <div class="flex-container">
-          <label for="FirstName">Имя</label>
-          <input type="text" id="FirstName" placeholder="Иван" />
-        </div>
+      <div class="section_element">
         <br />
-        <div class="flex-container">
-          <label for="LastName">Фамилия</label>
-          <input type="text" id="LastName" placeholder="Петров" />
-        </div>
+        <hr class="hr_auto" />
+        <h1 id="section3_up">Написать мне</h1>
+        <form class="form flex-container direction-column">
+          <div class="flex-container">
+            <label for="FirstName">Имя</label>
+            <input type="text" id="FirstName" placeholder="Иван" />
+          </div>
+          <br />
+          <div class="flex-container">
+            <label for="LastName">Фамилия</label>
+            <input type="text" id="LastName" placeholder="Петров" />
+          </div>
+          <br />
+          <div class="flex-container">
+            <label for="age">Возраст</label>
+            <input min="18" max="45" type="number" id="age" placeholder="18" />
+          </div>
+          <br />
+          <div class="flex-container">
+            <label for="sex">Пол</label>
+            <select name="Пол" id="sex">
+              <option value="male">Муж</option>
+              <option value="female">Жен</option>
+              <option value="none">-</option>
+            </select>
+          </div>
+          <br />
+          <div class="flex-container">
+            <label for="message">Сообщение</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" id="send">Отправить</button>
+          </div>
+          <br />
+        </form>
+        <hr class="hr_auto" />
         <br />
-        <div class="flex-container">
-          <label for="age">Возраст</label>
-          <input min="18" max="45" type="number" id="age" placeholder="18" />
-        </div>
-        <br />
-        <div class="flex-container">
-          <label for="sex">Пол</label>
-          <select name="Пол" id="sex">
-            <option value="male">Муж</option>
-            <option value="female">Жен</option>
-            <option value="none">-</option>
-          </select>
-        </div>
-        <br />
-        <div class="flex-container">
-          <label for="message">Сообщение</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-          <button type="submit" id="send">Отправить</button>
-        </div>
-        <br />
-      </form>
+      </div>
     </section>
     <footer class="footer">
       <div class="section_element">Copyright &copy Volodya</div>
