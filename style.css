@@ -58,6 +58,8 @@ body{
    margin-right: 20px;
 }
 .header {
+    width: 680px;
+    height: 80px;
     font-size: 30px;
     color: burlywood;
     background-color: rgb(208, 228, 204);
