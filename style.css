@@ -30,11 +30,13 @@
     padding: 0;
 }
 a{
-    padding: 2px;
+    font-size: larger;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 10px;
-
+    color: black;
+}
+a:hover{
+    color: springgreen;
 }
 h3 {
     background-color: aquamarine;
@@ -43,9 +45,22 @@ h3 {
 table.gltable{
     color:rgb(56, 16, 233);
 }
-#send {
-    background-color: black;
+button{
+    background-color: rgb(86, 13, 13);
     color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+}
+#send{
+    margin-top: 15px;
+    display: flex;
+    direction: rtl;
+    margin-bottom: 10px;
+}
+button:hover{
+    opacity: 0.8;
 }
 body{
     background: url(https://primeware.com.tr/Uploads/Hizmetler/c0e2f2b0-a93f-4583-87a0-3d6003be192a.jpg);
