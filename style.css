@@ -4,6 +4,40 @@
     margin: 0;
     padding: 0;
 }
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+.navigation a{
+    color: rgb(10, 135, 58);
+}
+
+.navigation li{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.navigation li:hover{
+    border-radius: 35px;
+    background-color: brown;
+}
+
+.table{
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table tbody tr:nth-child(odd){
+    background-color: bisque;
+    color: green;
+}
+
+
+
+
 .hr_auto{
     margin-bottom: 0px;
     width: auto;
@@ -42,9 +76,6 @@ h3 {
     background-color: aquamarine;
     border: 1px red ; 
 }
-table.gltable{
-    color:rgb(56, 16, 233);
-}
 button{
     background-color: rgb(86, 13, 13);
     color: white;
@@ -73,14 +104,16 @@ body{
    margin-right: 20px;
 }
 .header {
-    width: 680px;
-    height: 80px;
+    width: 640px;
+    height: 150px;
     font-size: 30px;
     color: burlywood;
     background-color: rgb(208, 228, 204);
     padding: 20px;
+    display: flex;
+    align-items: center;
     border-radius: 20px;
-    margin: auto;
+    margin: auto; 
 }
 
 .section1{
