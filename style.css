@@ -1,82 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&family=Tilt+Neon&display=swap');
-*{
+
+* {
     font-family: 'Shantell Sans', cursive;
     margin: 0;
     padding: 0;
 }
 
-.navigation ul{
+.navigation ul {
     display: flex;
     list-style: none;
 }
-.navigation a{
+
+.navigation a {
     color: rgb(10, 135, 58);
 }
 
-.navigation li{
+.navigation li {
     padding: 0 10px;
     display: flex;
     align-items: center;
 }
-.navigation li:hover{
+
+.navigation li:hover {
     border-radius: 35px;
     background-color: brown;
 }
 
-.table{
+.table {
     width: 600px;
     margin: auto;
     margin-top: 20px;
     text-align: center;
     border-collapse: collapse;
 }
-.table tbody tr:nth-child(odd){
+
+.table tbody tr:nth-child(odd) {
     background-color: bisque;
     color: green;
 }
 
+.header h1 {
+    display: none;
+}
 
 
-
-.hr_auto{
+.hr_auto {
     margin-bottom: 0px;
     width: auto;
     height: 5px;
     background-color: brown;
 }
-.flex_up{
+
+.flex_up {
     margin-top: 10px;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
 }
-#imagebor{
+
+#imagebor {
     border-radius: 30px;
 }
-#linkup{ 
+
+#linkup {
     margin-right: 20px;
     padding-top: 10px;
     padding: 0;
 }
-.ghlink{
+
+.ghlink {
     margin-left: 140px;
     padding-top: 10px;
     padding: 0;
 }
-a{
+
+a {
     font-size: larger;
     cursor: pointer;
     text-decoration: none;
     color: black;
 }
-a:hover{
+
+a:hover {
     color: springgreen;
 }
+
 h3 {
     background-color: aquamarine;
-    border: 1px red ; 
+    border: 1px red;
 }
-button{
+
+button {
     background-color: rgb(86, 13, 13);
     color: white;
     border-radius: 10px;
@@ -84,80 +98,125 @@ button{
     height: 30px;
     cursor: pointer;
 }
-#send{
+
+#send {
     margin-top: 15px;
     display: flex;
     direction: rtl;
     margin-bottom: 10px;
 }
-button:hover{
+
+button:hover {
     opacity: 0.8;
 }
-body{
+
+body {
     background: url(https://primeware.com.tr/Uploads/Hizmetler/c0e2f2b0-a93f-4583-87a0-3d6003be192a.jpg);
     color: rgb(73, 62, 41);
-    margin: 50px;
-    
+    margin: auto;
+
 }
-.section_element{
-   margin-left: 20px;
-   margin-right: 20px;
+
+.section_element {
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 .header {
-    width: 640px;
-    height: 150px;
-    font-size: 30px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100px;
+    font-size: 20px;
     color: burlywood;
     background-color: rgb(208, 228, 204);
-    padding: 20px;
+    padding: 0px;
     display: flex;
     align-items: center;
     border-radius: 20px;
-    margin: auto; 
+    justify-content: center;
 }
 
-.section1{
-    width: 680px;
+.content {
+    margin-top: 100px;
+}
+
+@media (max-width: 700px) {
+    .content {
+        margin-top: 40px;
+    }
+
+    .header {
+        height: 40px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .header h1 {
+        display: block;
+    }
+
+    .table {
+        width: 350px;
+    }
+}
+
+.section1 {
+    margin-top: 100px;
+    max-width: 680px;
     height: 840px;
     background-color: rgb(182, 210, 223);
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
 }
-.section2{
-    width: 680px;
+
+.section2 {
+    max-width: 680px;
     height: 300px;
     background-color: rgb(199, 188, 218);
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
 }
-.section1 h2{
+
+.section1 h2 {
     color: rgb(255, 9, 9);
     text-align: center;
 }
-.section2 article{
+
+.section2 article {
     margin-left: 20px;
     margin-right: 20px;
 }
-.section3{
-    width: 680px;
+
+.section3 {
+    max-width: 680px;
     height: 415px;
     background-color: rgb(223, 182, 211);
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
 }
-.section3 form{
+
+.section3 form {
     margin-left: 20px;
     margin-right: 20px;
-    
+
 }
-#section3_up{
+
+#section3_up {
     margin-left: 20px;
     margin-right: 20px;
 }
-.section3 input, .section3 textarea, .section3 select{
+
+.section3 input,
+.section3 textarea,
+.section3 select {
     background-color: rgb(211, 209, 209);
     border: 1px rgb(156, 196, 179) solid;
     border-radius: 6px;
@@ -167,23 +226,28 @@ body{
     outline: none;
     padding: 5px;
 }
-.footer{
+
+.footer {
     background-color: rgb(228, 175, 175);
     border-radius: 20px;
-    width: 680px;
+    max-width: 680px;
     height: 25px;
     margin: auto;
 }
-.flex-container{
+
+.flex-container {
     display: flex;
-    
+
 }
-.direction-column{
+
+.direction-column {
     flex-direction: column;
 }
-.form label{
+
+.form label {
     flex: 1
 }
-.section3 label{
+
+.section3 label {
     align-self: center
 }
