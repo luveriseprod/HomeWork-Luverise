@@ -12,4 +12,4 @@ console.log(`1) ${allContacts1}`);
 let allContacts2 = docElemById('contacts').id
 console.log(`2) ${allContacts2}`);
 let allContacts3 = docElemById('contacts')
-console.log(allContacts3) 
+console.log(allContacts3)  
