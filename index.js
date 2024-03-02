@@ -1,10 +1,11 @@
-let articles = document.getElementsByClassName("section2")
-let formContact = document.getElementsByClassName("section3")
-let goAllArticlesBtn = document.getElementById("goAllArticles")
-let goContactsBtn = document.getElementById("goContacts")
-goAllArticlesBtn.addEventListener("click", () => {
-    articles[0].scrollIntoView({behavior: "smooth"})
+let allArticlesBtn = document.getElementById("allArticles");
+let contactsBtn = document.getElementById("contacts");
+let articles = document.getElementById("section2");
+let formContacts = document.getElementById("formContacts");
+
+allArticlesBtn.addEventListener("click", () => {
+    articles.scrollIntoView({behavior: "smooth"})
 })
-goContactsBtn.addEventListener("click", () => {
-    formContact[0].scrollIntoView({behavior: "smooth"})
+contactsBtn.addEventListener("click", () => {
+    formContacts.scrollIntoView({behavior: "smooth"})
 })
