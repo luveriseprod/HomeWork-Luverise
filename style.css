@@ -177,7 +177,7 @@ body {
 
 .section2 {
     max-width: 680px;
-    height: 300px;
+    height: max-content;
     background-color: rgb(199, 188, 218);
     margin: auto;
     margin-bottom: 20px;

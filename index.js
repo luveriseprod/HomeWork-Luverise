@@ -1,26 +1,51 @@
 const userArticles = [
   {
-      name: "Javascript",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus minima fugit voluptatem odio maxime adipisci!.",
-      link: "javascript.html",
+    name: "Javascript",
+    text: "JavaScript often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.",
+    link: "javascript.html",
   },
   {
-      name: "Technology",
-      text: "Corrupti enim ipsa, praesentium, autem natus illo voluptat.",
-      link: "technology.html",
+    name: "MongoDB",
+    text: "MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas.",
+    link: "mongodb.html",
   },
+  {
+    name: "React",
+    text: "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+    link: "react.html"
+  }
 ];
 
-let body = document.body.children[4]
-let newSection = document.createElement("section")
-newSection.className = "section2"
-body.after(newSection)
+let artSection = document.getElementById("articles");
 
-let articles = userArticles.map(info => {
-  let {name, text, link} = info;
-  let newArticles = document.createElement("div");
-  newArticles.innerHTML = `${name} ${text} ${link}`
-  newSection.appendChild(newArticles)
-  return newArticles;
-})
-console.log(articles);
+let addArticles = userArticles.map((info) => {
+  let br = document.createElement("br");
+  let hr = document.createElement("hr");
+
+  let { name, text, link } = info;
+  let newArticle = document.createElement("article");
+  let artName = document.createElement("h3");
+  artName.innerHTML = name;
+  let artText = document.createElement("p");
+  artText.innerHTML = text;
+  let artLink = document.createElement("a");
+  artLink.href = `./articles/${link}`;
+  artLink.innerHTML = "Читать далее";
+  artSection.append(newArticle);
+  newArticle.append(artName, artText, artLink, hr, br);
+});
+
+
+let allArticlesBtn = document.getElementById("allArticles");
+let contactsBtn = document.getElementById("contacts");
+let articles = document.getElementById("section2");
+let formContacts = document.getElementById("formContacts");
+
+function addScrollToElement(btn, el) {
+  btn.addEventListener("click", () => {
+    el.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+addScrollToElement(allArticlesBtn, articles);
+addScrollToElement(contactsBtn, formContacts);
