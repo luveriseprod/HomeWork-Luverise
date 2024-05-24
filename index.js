@@ -1,3 +1,8 @@
+import addArticlesHTML from "./addArticlesHTML.js"
+addArticlesHTML();
+
+
+
 let allArticlesBtn = document.getElementById("allArticles");
 let contactsBtn = document.getElementById("contacts");
 let articles = document.getElementById("section2");
