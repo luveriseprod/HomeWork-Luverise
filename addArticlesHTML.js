@@ -1,4 +1,4 @@
-import getArticles from "./articlesService.js";
+import { getArticles } from "./articlesService.js";
 
 
 export default function addArticlesHTML(){
@@ -14,9 +14,8 @@ export default function addArticlesHTML(){
       let artText = document.createElement("p");
       artText.innerHTML = text;
       let artLink = document.createElement("a");
-      artLink.href = `./articles/${link}`;
+      artLink.href = `./article.html?articleId=${info.id}`;
       artLink.innerHTML = "Читать далее";
-    
       artSection.append(newArticle);
       newArticle.append(artName, artText, artLink, hr, br);
     });

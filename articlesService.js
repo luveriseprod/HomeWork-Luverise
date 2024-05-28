@@ -1,19 +1,13 @@
 import userArticles from "./articles.json" assert { type: "json" };
 
-function getArticlesId(id) {
-  const getArticlesId = userArticles.articles.find(art => {
-  return art.id === Number(id)
+export function getArticlesId(id) {
+  const getArtId = userArticles.articles.find(art => {
+    return art.id === Number(id)
   })
+  return getArtId
 }
-console.log(getArticlesId(1));
 
-export default function getArticles() {
+export function getArticles() {
   let articles = userArticles.articles;
   return articles;
 }
-
-// const currentUser = userData.users.find(user => {
-//   return user.id === Number(userId)
-// })
-
-// console.log(currentUser);

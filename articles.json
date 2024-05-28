@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "MongoDB",
-      "text": "MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas.",
+      "text": "This module is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas.",
       "link": "mongodb.html"
     },
     {
