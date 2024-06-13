@@ -1,10 +1,4 @@
-// import userArticles from "./articles.json" assert { type: "json" };
-
-
-
-let data = await fetch(`http://127.0.0.1:5500/articles.json`).then((res) =>
-  res.json()
-);
+import data from "./articles.json"
 
 export async function getArticlesId(id) {
   const getArtId = data.articles.find((art) => {

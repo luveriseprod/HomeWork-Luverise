@@ -1,5 +1,8 @@
+import './style.css'
 import { getArticlesId } from "./articlesService.js";
 
+
+ 
 const articleDiv = document.getElementById("articlesList");
 const params = new URLSearchParams(location.search);
 const articleId = params.get("articleId");
@@ -38,23 +41,3 @@ addArticlesHTML();
 
 
 
-
-
-
-
-
-// function addArticlesHTML() {
-//     if (getArticlesId(articleId)) {
-//       let { name, text } = getArticlesId(articleId);
-//       let articleName = document.createElement("h3");
-//       articleName.innerText = name;
-//       let articleText = document.createElement("p");
-//       articleText.innerText = text;
-//       let articleLink = document.createElement("a");
-//       articleLink.href = `./article.html?articleId=${articleId}`;
-//       articleLink.innerHTML = `Ссылка на данную страницу: ${articleLink.href}`;
-//       articleDiv.append(articleName, articleText, articleLink);
-//     }
-//   }
-
-//   addArticlesHTML();
